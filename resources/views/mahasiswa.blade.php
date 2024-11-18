@@ -39,6 +39,55 @@
 
     <div class="container" style="margin-left: 17px;  font-family: segoe UI;">
         <h1>Mahasiswa</h1>
+
+        <table class="table table-dark table-sm table-hover table-striped table-bordered text-center">
+            <thead>
+                <tr>
+                    <th>NIM</th>
+                    <th>Nama Mahasiswa</th>
+                    <th>Jenis Klamin</th>
+                    <th>Tanggal Lahir</th>
+                    <th>Alamat</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>000000000</td>
+                    <td>Firmansyah Sitepu</td>
+                    <td>Laki laki</td>
+                    <td>32-13-2025</td>
+                    <td>WASHINGTON</td>
+                </tr>
+                <tr>
+                    <td>000000000</td>
+                    <td>Mark Crishtoper</td>
+                    <td>Laki laki</td>
+                    <td>32-13-2025</td>
+                    <td>ANKARA</td>
+                </tr>
+                <tr>
+                    <td>000000000</td>
+                    <td>Brayen</td>
+                    <td>Laki laki</td>
+                    <td>32-13-2025</td>
+                    <td>MANCESTER</td>
+                </tr>
+                <tr>
+                    <td>000000000</td>
+                    <td>Brayen</td>
+                    <td>Laki laki</td>
+                    <td>32-13-2025</td>
+                    <td rowspan="2">FLORIDA</td>
+                </tr>
+                <tr>
+                    <td>000000000</td>
+                    <td>Brayen</td>
+                    <td>Laki laki</td>
+                    <td>32-13-2025</td>
+                </tr>
+            </tbody>
+        </table>
+
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
