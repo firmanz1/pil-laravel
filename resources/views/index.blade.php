@@ -38,6 +38,18 @@
 
     <div class="container" style="margin-left: 17px;  font-family: segoe UI;">
         <h1>Home</h1>
+        <hr>
+        <div class="row">
+            <div class="col-sm-6" style="text-align: justify;">
+                <h4>apa itu burung</h4>
+                <p><b>burung </b>sit amet consectetur adipisicing elit. Ipsum eos accusantium corporis minima voluptates veniam recusandae nesciunt, doloremque at ad fugiat fugit magni nobis officiis deserunt debitis ipsa voluptatem quam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio quidem corporis tempora rerum repellat doloribus suscipit quibusdam architecto magnam iure, recusandae non vel nemo mollitia tempore laborum commodi, consequuntur animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur officiis asperiores exercitationem. Aliquam omnis qui magnam accusantium, voluptate inventore libero sint delectus reprehenderit, ut impedit nobis provident harum assumenda reiciendis?</p>
+            </div>
+            <div class="col-sm-6" style="text-align: justify;">
+                <h4>apa itu bebek?</h4>
+                <p><b>bebek adalah sejenis baju olahraga </b> dolor sit amet consectetur adipisicing elit. Quis minus ipsa consequatur, pariatur, cumque dicta eaque voluptatum temporibus ipsum necessitatibus ea. Voluptates fugit eum debitis est, nemo pariatur itaque obcaecati? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid aliquam repellat pariatur quisquam, itaque molestias reiciendis eos suscipit numquam labore magnam sit aspernatur repudiandae, atque fuga? Commodi similique magni quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas optio necessitatibus minima est ratione sequi delectus, perspiciatis neque, repudiandae voluptates illo officiis! Necessitatibus molestias expedita corrupti accusantium voluptatem vitae animi!</p>
+            </div>
+        </div>
+
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
