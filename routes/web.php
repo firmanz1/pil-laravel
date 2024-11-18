@@ -18,3 +18,11 @@ Route::get('profile', function () {
     $nama = 'firman';
     return view('profile', compact('nama'));
 });
+
+Route::get('array', function () {
+    $nilai_awal = 1;
+    while ($nilai_awal <= 40) {
+        echo     'Halaman Array'  . $nilai_awal . '<br>';
+        $nilai_awal++;
+    }
+});
