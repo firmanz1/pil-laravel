@@ -47,44 +47,22 @@
                     <th>Nama Mahasiswa</th>
                     <th>Jenis Klamin</th>
                     <th>Tanggal Lahir</th>
-                    <th>Alamat</th>
+                    <th colspan="2">Alamat</th>
                 </tr>
             </thead>
             <tbody>
+                <?php $nilai_awal = 0; ?>
+                @while ($nilai_awal < $jumlah)
+                
                 <tr>
-                    <td>000000000</td>
-                    <td>Firmansyah Sitepu</td>
+                    <td>{{$nim[$nilai_awal]}}</td>
+                    <td>{{$nama[$nilai_awal]}}</td>
                     <td>Laki laki</td>
                     <td>32-13-2025</td>
                     <td>WASHINGTON</td>
                 </tr>
-                <tr>
-                    <td>000000000</td>
-                    <td>Mark Crishtoper</td>
-                    <td>Laki laki</td>
-                    <td>32-13-2025</td>
-                    <td>ANKARA</td>
-                </tr>
-                <tr>
-                    <td>000000000</td>
-                    <td>Brayen</td>
-                    <td>Laki laki</td>
-                    <td>32-13-2025</td>
-                    <td>MANCESTER</td>
-                </tr>
-                <tr>
-                    <td>000000000</td>
-                    <td>Brayen</td>
-                    <td>Laki laki</td>
-                    <td>32-13-2025</td>
-                    <td rowspan="2">FLORIDA</td>
-                </tr>
-                <tr>
-                    <td>000000000</td>
-                    <td>Brayen</td>
-                    <td>Laki laki</td>
-                    <td>32-13-2025</td>
-                </tr>
+                <?php $nilai_awal++ ?>
+                @endwhile
             </tbody>
         </table>
 
