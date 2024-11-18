@@ -26,3 +26,8 @@ Route::get('array', function () {
         $nilai_awal++;
     }
 });
+Route::get('arrayfor', function () {
+    for ($i = 10; $i < 20; $i++) {
+        echo 'Halo cantik' . $i + 1 . 'x<br>';
+    }
+});
