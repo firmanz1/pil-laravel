@@ -40,29 +40,84 @@
     <div class="container" style="margin-left: 17px;  font-family: segoe UI;">
         <h1>Mahasiswa</h1>
 
-        <table class="table table-dark table-sm table-hover table-striped table-bordered text-center">
-            <thead>
-                <tr>
-                    <th>NIM</th>
-                    <th>Nama Mahasiswa</th>
-                    <th>Jenis Klamin</th>
-                    <th>Tanggal Lahir</th>
-                    <th colspan="2">Alamat</th>
-                </tr>
-            </thead>
-            <tbody>
-               @for ($i = 0; $i < $jumlah; $i++)
-                   <tr>
-                    <td>{{$nim[$i]}}</td>
-                    <td>{{$nama[$i]}}</td>
-                    <td>lakik</td>
-                    <td>00000000</td>
-                    <td>HELL</td>
-                   </tr>
-               @endfor
-            </tbody>
-        </table>
 
+            <div class="row">
+                <div class="col-sm-6">
+                    <table class="table table-dark table-sm table-hover table-striped table-bordered text- center">
+                        <thead>
+                            <tr>
+                                <th>NIM</th>
+                                <th>Nama Mahasiswa</th>
+                                <th>Jenis Klamin</th>
+                                <th>Tanggal Lahir</th>
+                                <th colspan="2">Alamat</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                           @for ($i = 0; $i < $jumlah; $i++)
+                               <tr>
+                                <td>{{$nim[$i]}}</td>
+                                <td>{{$nama[$i]}}</td>
+                                <td>lakik</td>
+                                <td>00000000</td>
+                                <td>HELL</td>
+                               </tr>
+                           @endfor
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-sm-6">
+                    <h4 >Form Mahasiswa</h4>
+                    <form action="" method="GET">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <label for="">NIM</label>
+                                <input type="number" name="NIM" class="form-control" placeholder="nim woii nimm" >
+                            </div>
+                        <div class="col-sm-6">
+                            <label for="">Nama Mahasiswa</label>
+                            <input type="text" name="Nama_Mahasiswa"  class="form-control" placeholder="namamu jangan nama oranglain">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <label for="">Lakik apa bukan</label>
+                                <select name="Lakik_Apa_Bukan" class="form-control" placeholder="">
+                                <option value="1">Lakik</option>
+                                <option value="2">Bukan Lakik bg</option>
+                            </select>
+                            </div>
+                            <div class="col-sm-6">
+                                <label for="">Program Study</label>
+                                <select name="Prodi"  class="form-control">
+                                    <option value="1">SI soleedd</option>
+                                    <option value="2">Ilmu ghoib</option>
+                                    <option value="3">Ilmu GPT</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <label for="">Tanggal Membumi</label>
+                                <input type="date" name="TTL" class="form-control">
+                            </div>
+                            <div class="col-sm-6">
+                                <label for="">Dari mana Kau Bang</label>
+                                <select name="Inpo" class="form-control">
+                                <option value="1">Tembung</option>
+                                <option value="2">Kampung Keling</option>
+                                <option value="3">Karo</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-sm-12">
+                            <button class="btn btn-danger" style="width: 100%">Simpan</button>
+                        </div>
+                    </div>
+                    </form>
+                </div>
+            </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
