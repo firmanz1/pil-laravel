@@ -54,15 +54,6 @@
                             </tr>
                         </thead>
                         <tbody>
-                           @for ($i = 0; $i < $jumlah; $i++)
-                               <tr>
-                                <td>{{$nim[$i]}}</td>
-                                <td>{{$nama[$i]}}</td>
-                                <td>lakik</td>
-                                <td>00000000</td>
-                                <td>HELL</td>
-                               </tr>
-                           @endfor
                         </tbody>
                     </table>
                 </div>
@@ -108,7 +99,7 @@
                                 <option value="2">Kampung Keling</option>
                                 <option value="3">Karo</option>
                                 </select>
-                            </div>
+                            </div>  
                         </div>
                         <div class="row mt-2">
                             <div class="col-sm-12">
