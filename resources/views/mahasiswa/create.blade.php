@@ -38,26 +38,9 @@
 
 
     <div class="container" style="margin-left: 17px;  font-family: segoe UI;">
-        <h1>Mahasiswa</h1>
-
-
+        <h1>Ini Ni Halaman Tambah Mahasiswa</h1>
             <div class="row">
-                <div class="col-sm-6">
-                    <table class="table table-dark table-sm table-hover table-striped table-bordered text- center">
-                        <thead>
-                            <tr>
-                                <th>NIM</th>
-                                <th>Nama Mahasiswa</th>
-                                <th>Jenis Klamin</th>
-                                <th>Tanggal Lahir</th>
-                                <th colspan="2">Alamat</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="col-sm-6">
+                <div class="col-sm-12">
                     <h4 >Form Mahasiswa</h4>
                     <form action="" method="GET">
                         <div class="row">
@@ -102,8 +85,11 @@
                             </div>  
                         </div>
                         <div class="row mt-2">
-                            <div class="col-sm-12">
-                            <button class="btn btn-danger" style="width: 100%">Simpan</button>
+                            <div class="col-sm-6">
+                            <button class="btn btn-danger btn-outline-warning" style="width: 100%">Simpan</button>
+                        </div>
+                        <div class="col-sm-6">
+                            <a href="mahasiswa" class="btn btn-secondary btn-outline-warning" style="width: 100%">Pulang</a>
                         </div>
                     </div>
                     </form>
