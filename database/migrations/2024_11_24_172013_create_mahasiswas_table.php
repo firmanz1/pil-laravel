@@ -15,11 +15,13 @@ return new class extends Migration
             $table->id();
             $table->integer('nim')->unique();
             $table->string('nama_mahasiswa', 34)->nullable();
-            $table->enum('jk', ['L', 'BL']);
+            $table->enum('jk', ['LAKIK', 'BUKAN LAKIK']);
+            $table->enum('prodi', ['SI,MTK,STM,SIHIR']);
             $table->date('tgl_lahir')->nullable();
             $table->text('alamat');
             $table->timestamps();
         });
+        
     }
 
     /**
@@ -29,4 +31,5 @@ return new class extends Migration
     {
         Schema::dropIfExists('mahasiswas');
     }
+
 };

@@ -42,46 +42,54 @@
             <div class="row">
                 <div class="col-sm-12">
                     <h4 >Form Mahasiswa</h4>
-                    <form action="" method="GET">
+                    @if ($errors->any())
+                        <div class="pt-3">
+                            <div class="alert alert-danger">
+                                <ul>
+                                    @foreach ($errors->all() as $item)
+                                        <li>{{ $item }}</li>
+                                    @endforeach
+                                </ul>
+                            </div>
+                        </div>
+                    @endif
+                    <form action="/mahasiswa" method="POST">
+                        @csrf
                         <div class="row">
                             <div class="col-sm-6">
                                 <label for="">NIM</label>
-                                <input type="number" name="NIM" class="form-control" placeholder="nim woii nimm" >
+                                <input type="number" name="nim" class="form-control" placeholder="nim woii nim" value="{{ Session::get('nim')}}" >
                             </div>
                         <div class="col-sm-6">
                             <label for="">Nama Mahasiswa</label>
-                            <input type="text" name="Nama_Mahasiswa"  class="form-control" placeholder="namamu jangan nama oranglain">
+                            <input type="text" name="nama_mahasiswa"  class="form-control" placeholder="namamu jangan nama oranglain" value="{{ Session::get('nama_mahasiswa')}}">
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-sm-6">
                                 <label for="">Lakik apa bukan</label>
-                                <select name="Lakik_Apa_Bukan" class="form-control" placeholder="">
-                                <option value="1">Lakik</option>
-                                <option value="2">Bukan Lakik bg</option>
+                                <select name="jk" class="form-control" placeholder="">
+                                <option>Lakik</option>
+                                <option>Bukan Lakik bg</option>
                             </select>
                             </div>
                             <div class="col-sm-6">
                                 <label for="">Program Study</label>
-                                <select name="Prodi"  class="form-control">
-                                    <option value="1">SI soleedd</option>
-                                    <option value="2">Ilmu ghoib</option>
-                                    <option value="3">Ilmu GPT</option>
+                                <select name="prodi"  class="form-control">
+                                    <option>SI soleedd</option>
+                                    <option>Ilmu ghoib</option>
+                                    <option>Ilmu GPT</option>
                                 </select>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-sm-6">
                                 <label for="">Tanggal Membumi</label>
-                                <input type="date" name="TTL" class="form-control">
+                                <input type="date" name="tgl_lahir" class="form-control" value="{{ Session::get('tgl_lahir')}}">
                             </div>
                             <div class="col-sm-6">
                                 <label for="">Dari mana Kau Bang</label>
-                                <select name="Inpo" class="form-control">
-                                <option value="1">Tembung</option>
-                                <option value="2">Kampung Keling</option>
-                                <option value="3">Karo</option>
-                                </select>
+                                <input type="text" name="alamat"  class="form-control" placeholder="yang asli asli aja" value="{{ Session::get('alamat')}}">
                             </div>  
                         </div>
                         <div class="row mt-2">
@@ -89,7 +97,7 @@
                             <button class="btn btn-danger btn-outline-warning" style="width: 100%">Simpan</button>
                         </div>
                         <div class="col-sm-6">
-                            <a href="mahasiswa" class="btn btn-secondary btn-outline-warning" style="width: 100%">Pulang</a>
+                            <a href="/mahasiswa" class="btn btn-secondary btn-outline-warning" style="width: 100%">Pulang</a>
                         </div>
                     </div>
                     </form>
