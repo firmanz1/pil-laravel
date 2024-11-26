@@ -48,11 +48,11 @@
                             {{Session::get('success')}}
                         </div>
                     </div> --}}
-                    <div class="alert alert-succcess alert-dismissible fade show" role="alert">
+                    <div class="alert alert-info alert-dismissible fade show" role="alert">
                         <strong>successfully</strong>{{Session::get('success')}}
                         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                       </div>
-                @endif
+                {{-- @endif --}}
             </div>
         </div>
 
@@ -71,12 +71,25 @@
                             <tr>
                                 <th>NIM</th>
                                 <th>Nama Mahasiswa</th>
-                                <th>Jenis Klamin</th>
+                                <th>Jenis Kelamin</th>
+                                <th>Prodi</th>
                                 <th>Tanggal Lahir</th>
                                 <th colspan="2">Alamat</th>
                             </tr>
                         </thead>
                         <tbody>
+                            @foreach ($mahasiswa as $m)
+                            <tr>
+                                <td>{{ $no++ }}</td>
+                                <td>{{ $m->nim }}</td>
+                                <td>{{ $m->nama_mahasiswa }}</td>
+                                <td>{{ $m->jk }}</td>
+                                <td>{{ $m->prodi }}</td>
+                                <td>{{ $m->tgl_lahir }}</td>
+                                <td>{{ $m->alamat }}</td>
+                            </tr>
+                                
+                            @endforeach
                         </tbody>
                     </table>
                 </div>
